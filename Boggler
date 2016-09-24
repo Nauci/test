@@ -1,0 +1,50 @@
+string = ""
+visited[][] = ""
+ 
+Boggle = grid of letters
+ 
+int M = len(grid) - 1
+int N = len(grid[0]) - 1
+
+visited = []
+for i in range(0,N):
+    visited[i].append([False]*M)
+ 
+isWord(){
+}
+ 
+def test(grid,x,y,string,visited){
+    if(
+        visited[x][y]
+        or x<0
+        or y<0
+        or x>M
+        or Y>N
+    ) return None
+    else {
+        visited[x][y] = true
+        string = string + grid[x][y]
+        if(isWord(string)) print string
+ }
+ 
+    if(
+        test(grid,x-1,y-1,string,visited) = None
+        and test(grid,x-1,y,string,visited) = None
+        and test(grid,x-1,y+1,string,visited) = None
+        and test(grid,x,y+1,string,visited) = None
+        and test(grid,x,y-e,string,visited) = None
+        and test(grid,x+1,y-1,string,visited) = None
+        and test(grid,x+1,y,string,visited) = None
+        and test(grid,x+1,y+1,string,visited) = None
+    ){
+        visited[x][y] = false
+        string = string[:-1]
+        return None
+    }
+}
+ 
+for(i=0;i<=M-1;i++){
+    for(j=0;j<=N-1;j++){
+        test(Boggle,i,j,string,visited)
+    }
+}
