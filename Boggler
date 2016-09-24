@@ -33,7 +33,7 @@ def test(grid,x,y,string,visited){
         and test(grid,x-1,y,string,visited) = None
         and test(grid,x-1,y+1,string,visited) = None
         and test(grid,x,y+1,string,visited) = None
-        and test(grid,x,y-e,string,visited) = None
+        and test(grid,x,y-1,string,visited) = None
         and test(grid,x+1,y-1,string,visited) = None
         and test(grid,x+1,y,string,visited) = None
         and test(grid,x+1,y+1,string,visited) = None
