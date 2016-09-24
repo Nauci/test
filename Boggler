@@ -6,10 +6,11 @@ Boggle = grid of letters
 int M = len(grid) - 1
 int N = len(grid[0]) - 1
 
-visited = []
-for i in range(0,N):
-    visited[i].append([False]*M)
- 
+visited = [None]*N
+for i in range(0,N){
+    visited[i] = [False]*M
+}
+
 isWord(){
 }
  
